@@ -48,9 +48,10 @@ label-unfocused-padding=4
 
 [module/spotify]
 type=custom/script
-interval=2
+interval=1
 exec-if=pgrep -i spotify
-exec=spotify-now -i "%title - %artist" -e "Loading..."
+exec=spotify-now -i "%title - %artist" -e "Loading..." -p ""
+click-left=spotify-control play
 label="%output:0:32:...%"
 label-padding=2
 label-font=3
