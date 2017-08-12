@@ -24,7 +24,7 @@ font-3 = NotoSans:pixelsize=9;-2
 
 modules-left = i3
 modules-center = xwindow
-modules-right = spotify volume battery date powermenu
+modules-right = spotify volume battery wireless-network date powermenu
 scroll-up = bspwm-desknext
 scroll-down = bspwm-deskprev
 
@@ -45,6 +45,14 @@ label-unfocused=%icon%
 label-focused-underline=${xrdb:color8}
 label-focused-padding=4
 label-unfocused-padding=4
+
+[module/wireless-network]
+type=internal/network
+interface=wlp2s0
+format-connected = <label-connected>
+label-connected =  %essid%
+label-disconnected = No Wi-Fi
+label-connected-padding=1
 
 [module/spotify]
 type=custom/script

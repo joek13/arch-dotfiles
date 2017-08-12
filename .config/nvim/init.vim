@@ -56,8 +56,12 @@ Plug 'vim-airline/vim-airline-themes'
 "powerline!! 
 
 Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
-
+Plug 'zchee/deoplete-jedi'
+"python support for deoplete
 Plug 'dylanaraps/wal.vim'
+
+"javascript syntax
+Plug 'isRuslan/vim-es6'
 call plug#end()
 
 "NERD Tree open/close
@@ -89,7 +93,8 @@ set noshowmode
 
 "rustfmt config
 let g:rustfmt_autosave = 1 
-
+let g:deoplete#enable_at_startup = 1
+inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 "nerdtree
 let g:NERDTreeWinSize=20
 "nerd commenter config
