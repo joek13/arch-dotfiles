@@ -1,2 +1,2 @@
 URxvt*scrollBar: false
-URxvt*font: xft:Source Code Pro Medium:pixelsize=16:antialias=true:hinting=true,xft:Source Code Pro Medium:pixelsize=16:antialias=true:hinting=true, xft:Font Awesome:pixelsize=18:fontwidth=18
+URxvt*font: xft:Source Code Pro Medium:pixelsize=16:antialias=true:hinting=true,xft:Source Code Pro Medium:pixelsize=16:antialias=true:hinting=true, xft:Font Awesome:pixelsize=18:width=18

@@ -1,6 +1,8 @@
 wal -rt &
 alias vim=nvim
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+export BROWSER="firefox"
+set -gx PATH /home/joe/.cargo/bin $PATH
 
 #start x at login
 if status --is-login

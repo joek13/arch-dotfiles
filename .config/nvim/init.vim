@@ -26,6 +26,7 @@ set shiftwidth=4
 
 set number "line numbers
 set textwidth=0 "wrap long lines
+set mouse=a "mousing allowed :)
 
 call plug#begin()
 "vim-plug plugins
@@ -56,6 +57,7 @@ Plug 'vim-airline/vim-airline-themes'
 "powerline!! 
 
 Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
+Plug 'sebastianmarkow/deoplete-rust'
 Plug 'zchee/deoplete-jedi'
 "python support for deoplete
 Plug 'dylanaraps/wal.vim'
@@ -73,7 +75,8 @@ set updatetime=250
 "fix the clipboard
 set clipboard=unnamedplus
 
-
+autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
+"close preview after deoplete is finished
 
 "syntastic config
 set statusline+=%#warningmsg#
@@ -94,6 +97,8 @@ set noshowmode
 "rustfmt config
 let g:rustfmt_autosave = 1 
 let g:deoplete#enable_at_startup = 1
+let g:deoplete#sources#rust#racer_binary='/home/joe/.cargo/bin/racer'
+let g:deoplete#sources#rust#rust_source_path='/home/joe/.src/rust/src/'
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 "nerdtree
 let g:NERDTreeWinSize=20
