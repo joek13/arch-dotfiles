@@ -22,7 +22,7 @@ font-3 = NotoSans:pixelsize=8;-2
 
 modules-left = i3
 modules-center = xwindow
-modules-right = discord spotify volume date powermenu
+modules-right = lock spotify volume date powermenu
 tray-position=right
 
 [bar/secondary]
@@ -76,6 +76,12 @@ format-connected = <label-connected>
 label-connected =  %essid%
 label-disconnected = No Wi-Fi
 label-connected-padding=1
+
+[module/lock]
+type=custom/text
+click-left=xautolock -locknow
+content=""
+content-padding=4
 
 [module/discord]
 type=custom/script
