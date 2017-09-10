@@ -1,0 +1,22 @@
+#!/bin/bash
+wallpaper=$(<~/.wallpaper)
+hostname=$(hostname)
+source ~/.cache/wal/colors.sh
+background=$(echo $background | sed "s/\#\([0-9a-f]\+\)/\1ff/gi")
+foreground=$(echo $foreground | sed "s/\#\([0-9a-f]\+\)/\1ff/gi")
+color1=$(echo $color1 | sed "s/\#\([0-9a-f]\+\)/\1ff/gi")
+color2=$(echo $color2 | sed "s/\#\([0-9a-f]\+\)/\1ff/gi")
+color3=$(echo $color3 | sed "s/\#\([0-9a-f]\+\)/\1ff/gi")
+color4=$(echo $color4 | sed "s/\#\([0-9a-f]\+\)/\1ff/gi")
+color5=$(echo $color5 | sed "s/\#\([0-9a-f]\+\)/\1ff/gi")
+color6=$(echo $color6 | sed "s/\#\([0-9a-f]\+\)/\1ff/gi")
+color7=$(echo $color7 | sed "s/\#\([0-9a-f]\+\)/\1ff/gi")
+color8=$(echo $color8 | sed "s/\#\([0-9a-f]\+\)/\1ff/gi")
+color9=$(echo $color9 | sed "s/\#\([0-9a-f]\+\)/\1ff/gi")
+color10=$(echo $color10 | sed "s/\#\([0-9a-f]\+\)/\1ff/gi")
+color11=$(echo $color11 | sed "s/\#\([0-9a-f]\+\)/\1ff/gi")
+color12=$(echo $color12 | sed "s/\#\([0-9a-f]\+\)/\1ff/gi")
+color13=$(echo $color13 | sed "s/\#\([0-9a-f]\+\)/\1ff/gi")
+color14=$(echo $color14 | sed "s/\#\([0-9a-f]\+\)/\1ff/gi")
+color15=$(echo $color15 | sed "s/\#\([0-9a-f]\+\)/\1ff/gi")
+i3lock -B 2 --indicator --radius=120 --insidecolor=$background --ringcolor=$color14 --linecolor=$background --keyhlcolor=$color2 --bshlcolor=$color3 --separatorcolor=$background --insidevercolor=$background --insidewrongcolor=$background --textcolor=$foreground --ringvercolor=$color14 --ringwrongcolor=$color14 --wrongtext="Try again, bucko." --veriftext="Verifying..." --textsize=20
