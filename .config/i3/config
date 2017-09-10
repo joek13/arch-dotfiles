@@ -145,7 +145,6 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-msg exit"
 for_window [class="^.*"] border pixel 2
 gaps inner 10
-gaps outer 10
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
