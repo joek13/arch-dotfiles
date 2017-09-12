@@ -57,7 +57,8 @@ Plug 'vim-airline/vim-airline-themes'
 "powerline!! 
 
 Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
-Plug 'sebastianmarkow/deoplete-rust'
+"Plug 'sebastianmarkow/deoplete-rust'
+"disabled for now
 Plug 'zchee/deoplete-jedi'
 "python support for deoplete
 Plug 'dylanaraps/wal.vim'
