@@ -1,3 +1,3 @@
 function fish_greeting
-    neofetch
+	bash ~/scripts/greet.sh
 end
