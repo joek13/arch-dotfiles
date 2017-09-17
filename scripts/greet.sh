@@ -20,6 +20,7 @@ SILLY_EXPRESSIONS=("${FIRST}Flux Capacitor: ${SECOND}Uncharged"
     "${FIRST}MMR: ${SECOND}2k"
     "${FIRST}Inferior Distro: ${SECOND}Ubuntu"
     "${FIRST}Type-Safe Language: ${SECOND}Rust"
+    "${FIRST}Frogs: ${SECOND}Dumb"
 )
 RANDOM=$$$(date +%s)
 echo -e "${SILLY_EXPRESSIONS[$RANDOM % ${#SILLY_EXPRESSIONS[@]}]}"
