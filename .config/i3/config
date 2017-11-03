@@ -177,10 +177,10 @@ bindsym $mod+r mode "resize"
 bindsym --release Print exec "fish /home/joe/scripts/screenshot.fish -s"
 bindsym --release Shift+Print exec "fish /home/joe/scripts/screenshot.fish"
 bindsym --release Pause exec "xautolock -locknow"
-exec --no-startup-id "polybar top -r" # make polybar hot-reload
-exec --no-startup-id "polybar secondary -r"
+exec --no-startup-id "polybar laptop -r" # make polybar hot-reload
 exec --no-startup-id "autocutsel"
 exec --no-startup-id "xautolock -time 5 -locker 'bash ~/scripts/lock.sh'"
 exec --no-startup-id "nm-applet"
 exec --no-startup-id "thunar --daemon"
+exec --no-startup-id "xss-lock bash /home/joe/scripts/lock.sh"
 exec --no-startup-id "sh ~/.fehbg"

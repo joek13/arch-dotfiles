@@ -57,7 +57,7 @@ Plug 'vim-airline/vim-airline-themes'
 "powerline!! 
 
 Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
-"Plug 'sebastianmarkow/deoplete-rust'
+Plug 'sebastianmarkow/deoplete-rust'
 "disabled for now
 Plug 'zchee/deoplete-jedi'
 "python support for deoplete
@@ -65,6 +65,8 @@ Plug 'dylanaraps/wal.vim'
 
 "javascript syntax
 Plug 'isRuslan/vim-es6'
+"gruvbox
+Plug 'morhetz/gruvbox'
 call plug#end()
 
 "NERD Tree open/close
@@ -91,7 +93,7 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_loc_list_height=7
 
 let g:airline_powerline_fonts = 1
-let g:airline_theme='wal'
+" let g:airline_theme='gruvboxdark'
 set noshowmode
 "powerline
 
@@ -108,4 +110,5 @@ let g:NERDSpaceDelims = 1
 
 " Theme
 syntax enable
-colorscheme wal
+set bg=dark
+colorscheme gruvbox
