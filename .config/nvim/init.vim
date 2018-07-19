@@ -40,7 +40,7 @@ Plug 'mhartington/oceanic-next'
 "less ugly colors
 
 Plug 'airblade/vim-gitgutter'
-git gutters
+" git gutters
 
 Plug 'jiangmiao/auto-pairs'
 "autoclosing brackets, quotes, etc.
