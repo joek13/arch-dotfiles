@@ -11,6 +11,8 @@
 :map <A-7> 7gt
 :map <A-8> 8gt
 :map <A-9> 9gt
+:map <A-h> :bp<CR>
+:map <A-l> :bn<CR>
 
 :map <C-h> b
 :map <C-l> e
@@ -38,10 +40,13 @@ Plug 'mhartington/oceanic-next'
 "less ugly colors
 
 Plug 'airblade/vim-gitgutter'
-"git gutters
+git gutters
 
 Plug 'jiangmiao/auto-pairs'
 "autoclosing brackets, quotes, etc.
+
+Plug 'leafgarland/typescript-vim'
+"typescript syntax
 
 Plug 'scrooloose/nerdtree'
 "fs tree
@@ -95,8 +100,6 @@ let g:syntastic_loc_list_height=7
 let g:airline_powerline_fonts = 1
 " let g:airline_theme='gruvboxdark'
 set noshowmode
-"powerline
-
 "rustfmt config
 let g:rustfmt_autosave = 1 
 let g:deoplete#enable_at_startup = 1
